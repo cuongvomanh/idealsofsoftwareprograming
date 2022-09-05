@@ -1,1 +1,1 @@
-#idealsofsoftwareprograming
+# idealsofsoftwareprograming
