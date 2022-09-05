@@ -1,5 +1,5 @@
 # idealsofsoftwareprograming
 
-## [Blog Preface] (./blogs/prefix.md)
+## [Blog Preface](./blogs/preface.md)
 
 ## 
