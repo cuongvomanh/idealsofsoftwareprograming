@@ -1,4 +1,6 @@
-#  Common programing question
+#  Common programing questions
+
+We list some common programing questions bellow. We are going to answer and explain those answers in later blog.
 
 - Why java stream, optional is better than loop, if else?
 - Why should not catch Exception?
