@@ -1,8 +1,10 @@
 # System Message
 You are a software develop assistant using programing language Java. Requirement: Calculate fee for payment, fee type is field of payment. There is two fee type. Fee type fixed: fee amount is fixed 2 dolar. Fee type percentage: fee amount is 50 percent of payment amount. 
-## write the code and unit test
+## Developer
+`write the code and unit test`
 
-## Here is the code to calculate the fee for payment in Java:
+## ChatGPT
+Here is the code to calculate the fee for payment in Java:
 
 ```java
 public class PaymentFeeCalculator {
@@ -67,9 +69,11 @@ The `testPercentageFee` method tests the case where the fee type is `PERCENTAGE`
 
 The `testInvalidFeeType` method tests the case where the fee type is null, which should throw an `IllegalArgumentException`.
 
-## Refactor the code using replace conditional with polymorphism
+## Developer
+Refactor the code using replace conditional with polymorphism
 
-## To refactor the code using "replace conditional with polymorphism," we will first create an abstract class `Fee` with two subclasses `FixedFee` and `PercentageFee`. Each subclass will implement its own `calculateFee` method. 
+## ChatGPT
+To refactor the code using "replace conditional with polymorphism," we will first create an abstract class `Fee` with two subclasses `FixedFee` and `PercentageFee`. Each subclass will implement its own `calculateFee` method. 
 
 Here is the updated code:
 
@@ -133,9 +137,11 @@ We have created two instances of the `Fee` class (`FixedFee` and `PercentageFee`
 
 This refactored code is more extensible as it is easy to add new fee types in the future by creating new subclasses of `Fee`. It is also easier to test each fee type in isolation, by creating a separate unit test for each subclass of `Fee`.
 
-## Refactor the code using extract delegate for fee calculator resolver
+## Developer
+Refactor the code using extract delegate for fee calculator resolver
 
-## To refactor the code using "extract delegate," we will create a new class called `FeeCalculatorResolver` that will delegate the responsibility of resolving the fee calculator instance to a dedicated method. The `PaymentFeeCalculator` class will call this method to obtain the appropriate `Fee` object, which it will then use to calculate the fee amount.
+## ChatGPT
+To refactor the code using "extract delegate," we will create a new class called `FeeCalculatorResolver` that will delegate the responsibility of resolving the fee calculator instance to a dedicated method. The `PaymentFeeCalculator` class will call this method to obtain the appropriate `Fee` object, which it will then use to calculate the fee amount.
 
 Here is the updated code:
 
@@ -226,9 +232,11 @@ We create two instances of `PaymentFeeCalculator` -- one with the fee type "fixe
 
 This refactored code separates the responsibility of resolving the `FeeCalculator` from its usage. It also makes it easier to add new fee types in the future by simply adding a new implementation of the `FeeCalculator` interface and updating the `FeeCalculatorResolver` class.
 
-## Refactor the code: Extract Class FeeRecord contains payment and fee type
+## Developer
+Refactor the code: Extract Class FeeRecord contains payment and fee type
 
-## To refactor the code using "Extract Class," we will create a new class called `FeeRecord` that will include both the payment amount and fee type. `PaymentFeeCalculator` will take `FeeRecord` as input and return the calculated fee amount.
+## ChatGPT
+To refactor the code using "Extract Class," we will create a new class called `FeeRecord` that will include both the payment amount and fee type. `PaymentFeeCalculator` will take `FeeRecord` as input and return the calculated fee amount.
 
 Here is the updated code:
 
@@ -323,9 +331,11 @@ We have created two instances of `FeeRecord` -- one with the fee type "fixed" an
 
 This refactored code separates the payment amount and fee type into their own class, making it easier to maintain and extend the code in the future.
 
-## Refactor the code: refactor fee calculator resolver from config in database via Repository interface
+## Developer
+Refactor the code: refactor fee calculator resolver from config in database via Repository interface
 
-## To refactor the code as described, we will replace `FeeCalculatorResolver` with a `FeeCalculatorRepository` interface that will fetch fee calculation rules from a database. We will create a `FeeCalculatorRepositoryImpl` that implements this interface and fetches the fee calculation rules from the database. `PaymentFeeCalculator` will interact with `FeeCalculatorRepository` to resolve the appropriate `FeeCalculator`.
+## ChatGPT
+To refactor the code as described, we will replace `FeeCalculatorResolver` with a `FeeCalculatorRepository` interface that will fetch fee calculation rules from a database. We will create a `FeeCalculatorRepositoryImpl` that implements this interface and fetches the fee calculation rules from the database. `PaymentFeeCalculator` will interact with `FeeCalculatorRepository` to resolve the appropriate `FeeCalculator`.
 
 Here is the updated code:
 
