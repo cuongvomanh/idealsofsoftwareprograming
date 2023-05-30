@@ -1,6 +1,6 @@
 ## [Blog Preface](./blogs/preface.md)
 
-## [Blog 1: What is software programing?](./blogs/what-is-software-programing.md)
+## [Blog 1: Architecting Excellence: Elevating Your Software Craftsmanship with Loose Coupling and High Cohesion](./blogs/Architecting-Excellence-Elevating-Your-Software-Craftsmanship-with-Loose-Coupling-and-High-Cohesion.md)
 
 ## [Blog 2: How to programing?](./blogs/how-to-programing.md)
 
