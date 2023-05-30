@@ -2,7 +2,7 @@
 
 Design Patterns are a set of established solutions to recurring design problems in software development. They provide developers with an easy-to-use technique for building software that is flexible, stable, and maintainable. When applied correctly, they help to establish loose coupling and high cohesion between components of your code, enabling you to build scalable and extensible systems that adapt to future needs. In this blog, we will explore a few of the most important design patterns that promote loose coupling and high cohesion, providing several code examples to illustrate each concept.
 
-1. Observer Pattern
+## 1. Observer Pattern
 
 The Observer Pattern is a common solution used to notify a group of objects when a change has occurred in an object. This pattern allows dependent objects to be kept up-to-date with changes in a system, without tightly coupling the objects together. The Observer Pattern involves two key components: the Subject and the Observers. The Subject maintains a list of Observers, and when it changes, it notifies all the Observers. This pattern offers low coupling among objects, where objects communicate through shared interfaces, making the system more maintainable.
 
@@ -48,7 +48,7 @@ subject.subscribe(observer)
 subject.notify()
 ```
 
-2. Factory Method Pattern
+## 2. Factory Method Pattern
 
 The Factory Method Pattern is a solution for creating objects without specifying the exact class of object that will be created. The Factory Method Pattern involves a Factory class that is responsible for creating new objects. The Factory Method Pattern offers low coupling by abstracting the creation of objects away from the rest of the code.
 
@@ -82,7 +82,7 @@ public class Main {
 }
 ```
 
-3. Model-View-Controller Pattern (MVC)
+## 3. Model-View-Controller Pattern (MVC)
 
 The Model-View-Controller Pattern is a pattern for breaking down an application into three distinct parts: a model that stores data, a view that presents data to the user, and a controller that abstracts user actions to control the system. The MVC Pattern promotes low coupling between the View and the Model and high cohesion within each component.
 
@@ -122,7 +122,7 @@ controller.add_data("Data 3")
 ```
 
 
-4. Dependency Injection (DI)
+## 4. Dependency Injection (DI)
 
 Dependency Injection (DI) is a pattern that promotes loose coupling by allowing objects to be independent of their dependencies. Instead of creating dependencies within a class, they are provided externally, typically through constructor parameters or setter methods. This pattern makes code more testable and reduces the risk of tightly coupling objects.
 
@@ -156,7 +156,7 @@ public class Main {
 }
 ```
 
-5. Strategy Pattern
+## 5. Strategy Pattern
 
 The Strategy Pattern is a pattern that encapsulates interchangeable algorithms or behaviors into separate classes. It promotes high cohesion by ensuring each algorithm has a single responsibility, and clients can switch between algorithms at runtime without tightly coupling to a specific implementation. This pattern is commonly used in game development and machine learning.
 
@@ -190,7 +190,7 @@ context.strategy = ConcreteStrategy2()
 result2 = context.execute_strategy(data)
 ```
 
-Command Pattern
+## 6. Command Pattern
 
 Command Pattern is a behavioral design pattern that allows decoupling between the sender and the receiver of a request. It separates the request for an action and the execution of the action. In other words, it abstracts the request for an action as an object, and this object holds all the information required to perform the action.
 
@@ -235,7 +235,7 @@ class Invoker {
 
 Loose coupling is achieved in the Command Pattern as the sender and receiver are decoupled from each other. The Command object acts as an intermediary, which helps in reducing the dependencies between the sender and receiver. High cohesion is achieved because each Command class has only one responsibility, that is, to execute a specific action.
 
-Template Method Pattern
+## 7. Template Method Pattern
 
 Template Method Pattern is a behavioral design pattern that defines the skeleton of an algorithm in a base class. It allows derived classes to provide specific implementations of some of the steps without changing the core algorithm's structure.
 
@@ -270,7 +270,7 @@ class ConcreteClass extends AbstractClass {
 
 Loose coupling is achieved in the Template Method Pattern as the abstract base class defines the algorithm, and the derived classes only implement specific steps. High cohesion is achieved because the algorithm's structure is preserved in the base class, and the individual steps are implemented in the derived classes.
 
-Adapter Pattern
+## 8. Adapter Pattern
 
 Adapter Pattern is a structural design pattern that allows incompatible interfaces to work together. It wraps an existing class with a new interface, and the adapter translates the client's requests to the format required by the wrapped class.
 
@@ -313,7 +313,7 @@ class Client {
 
 Loose coupling is achieved in the Adapter Pattern as the client only communicates with the Target interface, and the Adapter shields the client from the complexity of the Adaptee interface. High cohesion is achieved because the Adapter's sole responsibility is to adapt the Adaptee interface to the Target interface.
 
-Facade Pattern
+## 9. Facade Pattern
 
 Facade Pattern is a structural design pattern that provides a simple interface to a complex system. It encapsulates the complexity of a subsystem by providing a unified interface to expose only the relevant features.
 
@@ -360,7 +360,7 @@ class Client {
 
 Loose coupling is achieved in the Facade Pattern as the client interacts only with the Facade, and the Facade interacts with the subsystem. High cohesion is achieved because each subsystem has only one responsibility, and the Facade's responsibility is to provide a unified interface.
 
-Composite Pattern
+## 10. Composite Pattern
 
 Composite Pattern is a structural design pattern that allows the creation of a tree-like structure of objects. It represents part-whole hierarchies of objects, and a single interface is used to interact with both leaf and composite objects.
 
@@ -409,7 +409,7 @@ class Client {
 
 Loose coupling is achieved in the Composite Pattern as the client interacts with the Component interface, which is implemented by both leaf and composite objects. High cohesion is achieved because each Component implementation has only one responsibility, either to perform the operation or to act as a container for other Component objects.
 
-Bridge Pattern
+## 11. Bridge Pattern
 
 Bridge Pattern is a structural design pattern that decouples the abstraction from its implementation so that the two can vary independently. It helps in separating the high-level logic from the low-level implementation details.
 
