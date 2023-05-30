@@ -4,7 +4,7 @@
 
 ## [Blog 2: Implementing Loose Coupling and High Cohesion in Your Software Projects](./blogs/Implementing-Loose-Coupling-and-High-Cohesion-in-Your-Software-Projects.md)
 
-## [Blog 3: Common programing questions](./blogs/common-programing-question.md)
+## [Blog 3: Why Polymorphism is Often Better Than Conditionals in Software Development](./blogs/Why-Polymorphism-is-Often-Better-Than-Conditionals-in-Software-Development.md)
 
 ## [Blog 4: Refactoring with ChatGPT chapter 1](./blogs/refactoring-1-fee-calculator.md)
 
