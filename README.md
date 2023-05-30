@@ -10,8 +10,10 @@
 
 ## [Blog 5: Composition Over Inheritance: The High-Performance Method for Building Resilient Software Solutions](./blogs/Composition-Over-Inheritance:-The-High-Performance-Method-for-Building-Resilient-Software-Solutions.md)
 
-## [Blog 6: Refactoring: The Key to Continuous Improvement in Software Design](./blogs/Refactoring:-The-Key-to-Continuous-Improvement-in-Software-Design.md)
+## [Blog 6: Design Patterns: Making Your Code Flexible and Maintainable](./blogs/Design-Patterns:-Making-Your-Code-Flexible-and-Maintainable.md)
 
-## [Blog 7: Effortless Refactoring: Streamlining Code Improvements with ChatGPT's Developer Refactor Commands](./blogs/Why-Polymorphism-is-Often-Better-Than-Conditionals-in-Software-DevelopmentEffortless-Refactoring:-Streamlining-Code-Improvements-with-ChatGPT's-Developer-Refactor-Commands.md)
+## [Blog 7: Refactoring: The Key to Continuous Improvement in Software Design](./blogs/Refactoring:-The-Key-to-Continuous-Improvement-in-Software-Design.md)
 
-## [Blog 8: An Introduction to The Clean Architecture: Techniques for Improving Software Quality](./blogs/An-Introduction-to-The-Clean-Architecture:-Techniques-for-Improving-Software-Quality.md)
+## [Blog 8: Effortless Refactoring: Streamlining Code Improvements with ChatGPT's Developer Refactor Commands](./blogs/Why-Polymorphism-is-Often-Better-Than-Conditionals-in-Software-DevelopmentEffortless-Refactoring:-Streamlining-Code-Improvements-with-ChatGPT's-Developer-Refactor-Commands.md)
+
+## [Blog 9: An Introduction to The Clean Architecture: Techniques for Improving Software Quality](./blogs/An-Introduction-to-The-Clean-Architecture:-Techniques-for-Improving-Software-Quality.md)
