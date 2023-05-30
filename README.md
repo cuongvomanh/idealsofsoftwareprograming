@@ -6,18 +6,20 @@
 
 ## [Blog 3: Common programing questions](./blogs/common-programing-question.md)
 
-## [Blog 4: Refactoring](./blogs/refactoring-1-fee-calculator.md)
+## [Blog 4: Refactoring with ChatGPT chapter 1](./blogs/refactoring-1-fee-calculator.md)
 
-## [Blog 5: Explaining using examples](./blogs/explaining-using-examples.md)
+## [Blog 5: Refactoring with ChatGPT chapter 2](./blogs/refactoring-2-fee-calculator.md)
 
-## [Blog 6: Other questions](./blogs/other-questions.md)
+## [Blog 6: Explaining using examples](./blogs/explaining-using-examples.md)
 
-## Blog 7: [Framework Explain] Spring framework implementation ideals (comming soon)
+## [Blog 7: Other questions](./blogs/other-questions.md)
 
-## Blog 8: [Framework Explain] Spring common questions (comming soon)
+## Blog 8: [Framework Explain] Spring framework implementation ideals (comming soon)
 
-## Blog 9: [Framework Explain] Spring elements (comming soon)
+## Blog 9: [Framework Explain] Spring common questions (comming soon)
 
-## Blog 10: [Testing] Unit test (comming soon)
+## Blog 10: [Framework Explain] Spring elements (comming soon)
 
-## Blog 11: [Architecture Explain] Microservices explain (comming soon)
+## Blog 11: [Testing] Unit test (comming soon)
+
+## Blog 12: [Architecture Explain] Microservices explain (comming soon)
