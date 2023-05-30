@@ -14,3 +14,4 @@
 
 ## [Blog 7: Effortless Refactoring: Streamlining Code Improvements with ChatGPT's Developer Refactor Commands](./blogs/Why-Polymorphism-is-Often-Better-Than-Conditionals-in-Software-DevelopmentEffortless-Refactoring:-Streamlining-Code-Improvements-with-ChatGPT's-Developer-Refactor-Commands.md)
 
+## [Blog 8: An Introduction to The Clean Architecture: Techniques for Improving Software Quality](./blogs/An-Introduction-to-The-Clean-Architecture:-Techniques-for-Improving-Software-Quality.md)
