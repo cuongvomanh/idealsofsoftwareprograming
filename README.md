@@ -6,20 +6,5 @@
 
 ## [Blog 3: Why Polymorphism is Often Better Than Conditionals in Software Development](./blogs/Why-Polymorphism-is-Often-Better-Than-Conditionals-in-Software-Development.md)
 
-## [Blog 4: Refactoring with ChatGPT chapter 1](./blogs/refactoring-1-fee-calculator.md)
+## [Blog 4: Effortless Refactoring: Streamlining Code Improvements with ChatGPT's Developer Refactor Commands](./blogs/Why-Polymorphism-is-Often-Better-Than-Conditionals-in-Software-DevelopmentEffortless-Refactoring:-Streamlining-Code-Improvements-with-ChatGPT's-Developer-Refactor-Commands.md)
 
-## [Blog 5: Refactoring with ChatGPT chapter 2](./blogs/refactoring-2-fee-calculator.md)
-
-## [Blog 6: Explaining using examples](./blogs/explaining-using-examples.md)
-
-## [Blog 7: Other questions](./blogs/other-questions.md)
-
-## Blog 8: [Framework Explain] Spring framework implementation ideals (comming soon)
-
-## Blog 9: [Framework Explain] Spring common questions (comming soon)
-
-## Blog 10: [Framework Explain] Spring elements (comming soon)
-
-## Blog 11: [Testing] Unit test (comming soon)
-
-## Blog 12: [Architecture Explain] Microservices explain (comming soon)
