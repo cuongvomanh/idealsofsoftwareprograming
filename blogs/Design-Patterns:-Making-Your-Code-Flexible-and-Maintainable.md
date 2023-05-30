@@ -121,6 +121,349 @@ controller.add_data("Data 2")
 controller.add_data("Data 3")
 ```
 
+
+4. Dependency Injection (DI)
+
+Dependency Injection (DI) is a pattern that promotes loose coupling by allowing objects to be independent of their dependencies. Instead of creating dependencies within a class, they are provided externally, typically through constructor parameters or setter methods. This pattern makes code more testable and reduces the risk of tightly coupling objects.
+
+Here's an example code to illustrate how to implement the DI Pattern using Java:
+
+```
+public class MyApp {
+    private final MyService myService;
+
+    public MyApp(MyService myService) {
+        this.myService = myService;
+    }
+
+    public void run() {
+        myService.doSomething();
+    }
+}
+
+public class MyService {
+    public void doSomething() {
+        // Business logic
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MyService myService = new MyService();
+        MyApp myApp = new MyApp(myService);
+        myApp.run();
+    }
+}
+```
+
+5. Strategy Pattern
+
+The Strategy Pattern is a pattern that encapsulates interchangeable algorithms or behaviors into separate classes. It promotes high cohesion by ensuring each algorithm has a single responsibility, and clients can switch between algorithms at runtime without tightly coupling to a specific implementation. This pattern is commonly used in game development and machine learning.
+
+Here's an example code to illustrate how to implement the Strategy Pattern using Python:
+
+```
+class Context:
+    def __init__(self, strategy):
+        self.strategy = strategy
+
+    def execute_strategy(self, data):
+        return self.strategy.execute(data)
+
+class Strategy:
+    def execute(self, data):
+        pass
+
+class ConcreteStrategy1(Strategy):
+    def execute(self, data):
+        # Use algorithm 1
+        pass
+
+class ConcreteStrategy2(Strategy):
+    def execute(self, data):
+        # Use algorithm 2
+        pass
+
+context = Context(ConcreteStrategy1())
+result1 = context.execute_strategy(data)
+context.strategy = ConcreteStrategy2()
+result2 = context.execute_strategy(data)
+```
+
+Command Pattern
+
+Command Pattern is a behavioral design pattern that allows decoupling between the sender and the receiver of a request. It separates the request for an action and the execution of the action. In other words, it abstracts the request for an action as an object, and this object holds all the information required to perform the action.
+
+Here's a basic implementation of the Command Pattern in Java:
+
+```java
+interface Command {
+    void execute();
+}
+
+class ConcreteCommand implements Command {
+
+    private Receiver receiver;
+
+    ConcreteCommand(Receiver receiver) {
+        this.receiver = receiver;
+    }
+
+    public void execute() {
+        receiver.action();
+    }
+}
+
+class Receiver {
+    void action() {
+        ... // perform some action
+    }
+}
+
+class Invoker {
+    private Command command;
+
+    void setCommand(Command command) {
+        this.command = command;
+    }
+
+    void executeCommand() {
+        command.execute();
+    }
+}
+```
+
+Loose coupling is achieved in the Command Pattern as the sender and receiver are decoupled from each other. The Command object acts as an intermediary, which helps in reducing the dependencies between the sender and receiver. High cohesion is achieved because each Command class has only one responsibility, that is, to execute a specific action.
+
+Template Method Pattern
+
+Template Method Pattern is a behavioral design pattern that defines the skeleton of an algorithm in a base class. It allows derived classes to provide specific implementations of some of the steps without changing the core algorithm's structure.
+
+Here's a basic implementation of the Template Method Pattern in Java:
+
+```java
+abstract class AbstractClass {
+    void templateMethod() {
+        step1();
+        step2();
+        step3();
+    }
+
+    abstract void step2();
+
+    void step1() {
+        ... // do something
+    }
+
+    void step3() {
+        ... // do something
+    }
+}
+
+class ConcreteClass extends AbstractClass {
+
+    void step2() {
+        ... // provide specific implementation for step2
+    }
+}
+```
+
+Loose coupling is achieved in the Template Method Pattern as the abstract base class defines the algorithm, and the derived classes only implement specific steps. High cohesion is achieved because the algorithm's structure is preserved in the base class, and the individual steps are implemented in the derived classes.
+
+Adapter Pattern
+
+Adapter Pattern is a structural design pattern that allows incompatible interfaces to work together. It wraps an existing class with a new interface, and the adapter translates the client's requests to the format required by the wrapped class.
+
+Here's a basic implementation of the Adapter Pattern in Java:
+
+```java
+interface Target {
+    void request();
+}
+
+class Adaptee {
+    void specificRequest() {
+        ... // do something
+    }
+}
+
+class Adapter implements Target {
+
+    private Adaptee adaptee;
+
+    Adapter(Adaptee adaptee) {
+        this.adaptee = adaptee;
+    }
+
+    public void request() {
+        adaptee.specificRequest();
+    }
+}
+
+class Client {
+    public static void main(String[] args) {
+
+        Adaptee adaptee = new Adaptee();
+        Target target = new Adapter(adaptee);
+
+        target.request();
+    }
+}
+```
+
+Loose coupling is achieved in the Adapter Pattern as the client only communicates with the Target interface, and the Adapter shields the client from the complexity of the Adaptee interface. High cohesion is achieved because the Adapter's sole responsibility is to adapt the Adaptee interface to the Target interface.
+
+Facade Pattern
+
+Facade Pattern is a structural design pattern that provides a simple interface to a complex system. It encapsulates the complexity of a subsystem by providing a unified interface to expose only the relevant features.
+
+Here's a basic implementation of the Facade Pattern in Java:
+
+```java
+class Subsystem1 {
+    void method1() {
+        ... // do something
+    }
+}
+
+class Subsystem2 {
+    void method2() {
+        ... // do something
+    }
+}
+
+class Facade {
+    private Subsystem1 subsystem1;
+    private Subsystem2 subsystem2;
+
+    Facade(Subsystem1 subsystem1, Subsystem2 subsystem2) {
+        this.subsystem1 = subsystem1;
+        this.subsystem2 = subsystem2;
+    }
+
+    void doSomething() {
+        subsystem1.method1();
+        subsystem2.method2();
+    }
+}
+
+class Client {
+    public static void main(String[] args) {
+        Subsystem1 subsystem1 = new Subsystem1();
+        Subsystem2 subsystem2 = new Subsystem2();
+
+        Facade facade = new Facade(subsystem1, subsystem2);
+        facade.doSomething();
+    }
+}
+```
+
+Loose coupling is achieved in the Facade Pattern as the client interacts only with the Facade, and the Facade interacts with the subsystem. High cohesion is achieved because each subsystem has only one responsibility, and the Facade's responsibility is to provide a unified interface.
+
+Composite Pattern
+
+Composite Pattern is a structural design pattern that allows the creation of a tree-like structure of objects. It represents part-whole hierarchies of objects, and a single interface is used to interact with both leaf and composite objects.
+
+Here's a basic implementation of the Composite Pattern in Java:
+
+```java
+interface Component {
+    void operation();
+}
+
+class Leaf implements Component {
+    void operation() {
+        ... // do some operation
+    }
+}
+
+class Composite implements Component {
+
+    private List<Component> children;
+
+    Composite(List<Component> children) {
+        this.children = children;
+    }
+
+    void operation() {
+        for (Component component : children) {
+            component.operation();
+        }
+    }
+}
+
+class Client {
+    public static void main(String[] args) {
+        Component leaf1 = new Leaf();
+        Component leaf2 = new Leaf();
+
+        List<Component> children = new ArrayList<>();
+        children.add(leaf1);
+        children.add(leaf2);
+
+        Component composite = new Composite(children);
+        composite.operation();
+    }
+}
+```
+
+Loose coupling is achieved in the Composite Pattern as the client interacts with the Component interface, which is implemented by both leaf and composite objects. High cohesion is achieved because each Component implementation has only one responsibility, either to perform the operation or to act as a container for other Component objects.
+
+Bridge Pattern
+
+Bridge Pattern is a structural design pattern that decouples the abstraction from its implementation so that the two can vary independently. It helps in separating the high-level logic from the low-level implementation details.
+
+Here's a basic implementation of the Bridge Pattern in Java:
+
+```java
+interface Implementor {
+    void operationImpl();
+}
+
+class ConcreteImplementor implements Implementor {
+    void operationImpl() {
+        ... // do some low-level implementation
+    }
+}
+
+abstract class Abstraction {
+
+    protected Implementor implementor;
+
+    Abstraction(Implementor implementor) {
+        this.implementor = implementor;
+    }
+
+    abstract void operation();
+}
+
+class RefinedAbstraction extends Abstraction {
+
+    RefinedAbstraction(Implementor implementor) {
+        super(implementor);
+    }
+
+    void operation() {
+        ... // do some high-level logic
+        implementor.operationImpl();
+        ... // do some more high-level logic
+    }
+}
+
+class Client {
+    public static void main(String[] args) {
+        Implementor implementor = new ConcreteImplementor();
+        Abstraction abstraction = new RefinedAbstraction(implementor);
+
+        abstraction.operation();
+    }
+}
+```
+
+Loose coupling is achieved in the Bridge Pattern as the Abstraction and Implementor are decoupled, and each can vary independently. High cohesion is achieved because each class has only one responsibility, either to implement the low-level details or the high-level logic.
+
+
 Conclusion
 
-In summary, Design Patterns provide an effective approach to building flexible and maintainable code. By promoting loose coupling and high cohesion between components, they enable developers to create scalable and extensible systems that adapt to changing requirements. In this blog, we have explored three important design patterns - Observer Pattern, Factory Method Pattern, and Model-View-Controller Pattern - and provided practical code examples to illustrate each pattern's implementation. By using these and other design patterns, you can build robust and efficient software that delivers real value to users.
+These are just a few examples of design patterns that align with the principles of loose coupling and high cohesion. Each pattern addresses different aspects of software design and can be used to achieve modular, maintainable, and flexible systems. By using these patterns and others available, developers can create robust and efficient software that delivers real value to users. When working with these patterns, keep in mind that proper implementation can be the difference between strong, maintainable code and difficult-to-update, inflexible code.
+
