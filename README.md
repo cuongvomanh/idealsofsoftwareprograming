@@ -8,5 +8,7 @@
 
 ## [Blog 4: Composition Over Inheritance: The High-Performance Method for Building Resilient Software Solutions](./blogs/Composition-Over-Inheritance:-The-High-Performance-Method-for-Building-Resilient-Software-Solutions.md)
 
-## [Blog 5: Effortless Refactoring: Streamlining Code Improvements with ChatGPT's Developer Refactor Commands](./blogs/Why-Polymorphism-is-Often-Better-Than-Conditionals-in-Software-DevelopmentEffortless-Refactoring:-Streamlining-Code-Improvements-with-ChatGPT's-Developer-Refactor-Commands.md)
+## [Blog 5: Refactoring: The Key to Continuous Improvement in Software Design](./blogs/Refactoring:-The-Key-to-Continuous-Improvement-in-Software-Design.md)
+
+## [Blog 6: Effortless Refactoring: Streamlining Code Improvements with ChatGPT's Developer Refactor Commands](./blogs/Why-Polymorphism-is-Often-Better-Than-Conditionals-in-Software-DevelopmentEffortless-Refactoring:-Streamlining-Code-Improvements-with-ChatGPT's-Developer-Refactor-Commands.md)
 
